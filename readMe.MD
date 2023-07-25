@@ -1,4 +1,4 @@
-# ![Découverte HTML/CSS](readMeAsset\banniereGitHub.png)
+# ![Découverte HTML/CSS](decouverte_html_css\readMeAsset\banniereGitHub.png)
 
 ## Introduction 
 
@@ -18,7 +18,7 @@ Réaliser l’intégration du composant en respectant :
 - HTML / CSS pas de responsive et pas de framework 
 
 
-![Maquette à reproduire](readMeAsset\01_tolier_basket.png)
+![Maquette à reproduire](decouverte_html_css\readMeAsset\01_tolier_basket.png)
 
 ## Neiges éternelles
 
@@ -28,7 +28,7 @@ Exporter l’image et réaliser l’intégration de la bannière :
 - L’image est à intégré en image d’arrière plan
 - Le dégradé est à ajouté en css
 
-![Maquette à reproduire](readMeAsset\02_neigeeternelle.png)
+![Maquette à reproduire](decouverte_html_css\readMeAsset\02_neigeeternelle.png)
 
 ## Colonne Comparatif
 Vous devez exporter les icônes et réaliser l’intégration du composant en respectant :
@@ -43,7 +43,7 @@ Vous devez exporter les icônes et réaliser l’intégration du composant en re
 - Le composant devra être centré verticalement et horizontalement à l’écran.
 - HTML / CSS
 
-![Maquette à reproduire](readMeAsset\03_colonne_comparatif.png)
+![Maquette à reproduire](decouverte_html_css\readMeAsset\03_colonne_comparatif.png)
 
 ## Huddle 
 
@@ -60,7 +60,7 @@ Vous devez exporter les icônes et réaliser l’intégration du composant en re
 - HTML / CSS
 
 
-![Maquette à reproduire](readMeAsset\05_huddle.png)
+![Maquette à reproduire](decouverte_html_css\readMeAsset\05_huddle.png)
 
 ## Price 
 
@@ -77,7 +77,7 @@ Vous devez réaliser l’intégration du composant en respectant :
 - Langage autorisé - HTML / CSS. Pas de framework et générateur de code css
 
 
-![Maquette à reproduire](readMeAsset\06_price.png)
+![Maquette à reproduire](decouverte_html_css\readMeAsset\06_price.png)
 
 ## Product Preview
 
@@ -93,7 +93,7 @@ Vous devez exporter et réaliser l’intégration du composant en respectant :
 - Valide w3c
 - Langage autorisé - HTML / CSS. Pas de framework et générateur de code css
 
-![Maquette à reproduire](readMeAsset\07_productPreview.png)
+![Maquette à reproduire](decouverte_html_css\readMeAsset\07_productPreview.png)
 
 ## Optimisation Site
 
@@ -102,4 +102,4 @@ https://developers.google.com/search/blog/2020/11/timing-for-page-experience?hl=
 
 Dans sa démarche d’offrir un “meilleurWeb” et des expériences toujours plusriches et centrées sur l’utilisateur, Google a intégré de nouveaux éléments qui influencent le référencement. Ces signaux portent sur la rapidité de chargement d’une page, la réactivité et la stabilité visuelle. Ils portent le nom de Web Core Vitals et seront pris en compte dans l’algorithme de Google en Juin 2021
 
-![Maquette à reproduire](readMeAsset\08_optimisation_site.png)
+![Maquette à reproduire](decouverte_html_css\readMeAsset\08_optimisation_site.png)
