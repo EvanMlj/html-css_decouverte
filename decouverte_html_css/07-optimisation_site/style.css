@@ -1,0 +1,953 @@
+:root {
+    font: 100%;
+    --orange-color:#FF8229;
+    --red-color:#BB2323;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+     url('font/Inter-VariableFont_slnt\,wght.woff2');
+     font-display: swap;
+}
+@font-face{
+    font-family: 'Roboto';
+    src: local('Roboto Regular'), local('Roboto-Regular') ,url('font/Roboto-Regular.woff2');
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src:local('Roboto Medium'), local('Roboto-Medium') url('font/Roboto-Medium.woff2');
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold') url('font/Roboto-Bold.woff2');
+    font-display: swap;
+}
+
+html{
+    max-width: 116.8125rem;
+    min-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    max-width: 116.8125rem;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.375rem 0rem 1.625rem 3.75rem;
+    box-sizing: border-box;
+}
+#ctn_ctc_navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width : 36.44%  ;
+}
+
+/* paramètres font navbar */
+#ctn_ctc_navbar > h1 {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    margin: 0;
+    }
+
+#ctn_ctc_navbar > h2 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.5rem ;
+margin: 0;
+}
+/* fin paramètre font navbar  */
+
+
+body {
+    margin: 0;
+    max-width: 116.8125rem;
+    
+    background-image: url("image/fond.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* box-sizing: border-box; */
+    padding-top: 4rem;
+    margin: 0;
+    
+    /* width: max(1869px,100%); */
+    /* box-sizing: border-box; */
+    color: white;
+    
+    
+    padding-top: 1.375rem;
+}
+
+#pres_photo{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#photo_portrait{
+    width: min(765px,100%);
+}
+
+#presentation{
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 4.375rem;
+    padding-left: 8rem ; */
+    border: red solid 1px;
+    /* padding-bottom: 6.25rem ; */
+    align-items: center;
+}
+
+    #text_pres{
+        display: flex;
+        flex-direction: column;
+        border: blue solid 1px ;
+       
+    }
+
+    #text_pres > h1 {
+        font-family: 'Roboto',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    #text_pres > h2:first-of-type {
+        font-family: 'Inter',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4.5rem;
+        line-height: 6.3rem;
+        letter-spacing: -0.1875rem;
+        margin: 0;
+        
+        padding-top: 2.0625rem;
+    }
+
+    #text_pres > h2:nth-of-type(2) {
+        font-family: 'Inter',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4.5rem;
+        line-height: 6.3125rem;
+        letter-spacing: -0.0625rem;
+        color: #FF8229;
+        margin: 0;
+        padding-top: 1rem;
+    }
+
+    #text_pres > p:first-of-type {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width : 27.5625rem ;
+        margin: 0;
+        padding-top: 1rem;
+    }
+
+    #text_pres > p:nth-of-type(2) {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 0;
+        padding-top: 1.5rem;
+    }
+
+    #conteneurbouton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    padding-top: 3.75rem;
+    width: 17.3125rem;
+    }
+
+    .bouton_pres{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+
+        width: 7.6875rem;
+        height: 2.9375rem;
+        border-radius: 50px;
+    }
+
+    #bouton_portfolio{
+        background: var(--red-color) ;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #bouton_contact{
+        color: var(--orange-color);
+        border: var(--orange-color) solid 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #conteneur_client{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+
+    }
+
+    #client{
+        border: green solid 1px;
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        box-sizing: border-box;
+        margin: 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 1.9375rem;
+        text-align: center;
+        letter-spacing: 0.1875rem;
+        text-transform: uppercase;
+        max-width: 76.25rem;
+        padding-top: 5.5rem;
+    }
+
+    #logo_sega{
+        padding-right: 3.7631rem ;
+    }
+
+    #logo_ubisoft{
+        padding-right: 1.4063rem;
+    }
+
+    #logo_microsoft{
+        padding-right: 0.8219rem;
+    }
+
+    #logo_EA{
+        padding-right: 2.6625rem;
+    }
+
+    #logo_capcom{
+        padding-right: 2.0038rem;
+    }
+
+#competence{
+    border: solid violet 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9.5rem 0rem 13.5rem 0rem ;
+    max-width: 83.5rem ;
+    box-sizing: border-box;
+}
+
+
+#conteneur_bdg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+#competence > h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3.75rem;
+    text-transform: capitalize;
+    margin: 0 ;
+    padding-bottom: 2.8125rem ;
+}
+
+#competence > p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin: 0 ;
+    text-align: center;
+    max-width: 26.8125rem;
+    padding-bottom: 7.0625rem;
+    box-sizing: border-box;
+    
+}
+
+
+.badge_cpt > h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin: 0 ;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+    
+}
+
+.badge_cpt > p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin: 0 ;
+    max-width: 10.9375rem;
+    box-sizing: border-box;
+}
+
+#portfolio{
+    max-width: 69.375rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+}
+
+#portfolio_txt > h2, p {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+
+#portfolio_txt > h2{
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3.75rem;
+    text-transform: capitalize;
+   padding-bottom: 2.3125rem;
+}
+
+#portfolio_txt > p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+#portfolio_txt{
+    max-width: 18.5rem;
+}
+
+.ligne_1, .ligne_2{
+    padding-bottom: 1.5rem;
+}
+
+#conteneur_ph_portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    max-width: 45.6875rem ;
+}
+
+#experience{
+    display: flex;
+    flex-direction: row;
+    max-width: 69.375rem;
+    padding-top: 15.1875rem ;
+}
+
+#conteneur_experience{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience_dtl{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 4.5625rem;
+    
+}
+
+.conteneur_exp_2{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10.8125rem;
+}
+
+#bouffon{
+    padding-right: 8.125rem ;
+}
+
+#experience > h2, p, #bouton_dl, h3{
+    font-family: 'Inter',sans-serif;
+    margin: 0;
+}
+
+#experience_txt > h2 {
+    margin:0;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3.75rem;
+    text-transform: capitalize;
+}
+
+#experience > p, #bouton_dl {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+#bouton_dl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--red-color);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    width:12.125rem; 
+    height: 2.9375rem;
+    margin-top: 1.8125rem;
+}
+
+.date  {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#experience_txt > h2 {
+    padding-bottom: 2.9375rem ;
+}
+
+#experience_txt > p {
+    max-width: 15.125rem ;
+}
+#experience_txt{
+    padding-right: 121px;
+}
+
+.experience_dtl > img {
+    padding-right : 1.8125rem;
+    padding-bottom : 3.75rem
+}
+
+.conteneur_exp_2 > p {
+    padding-bottom: 0.8125rem;
+}
+
+#competence2{
+    display: flex;
+    flex-direction: row;
+    border: solid red 1px;
+    justify-content: center;
+    max-width: 69.1875rem ;
+}
+
+#conteneur_bar{
+    width: 69.1875rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bar{
+    background-color: #2C2C2C;
+    box-shadow: 0rem 0rem 1.8125rem rgba(68, 88, 144, 0.12);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding:1.125rem 1.125rem 1.125rem 1.125rem;
+}
+
+.logo_titre_cpt{
+    display: flex;
+    flex-direction: row;
+}
+
+.bar > p {
+    background-color: #2C2C2C;
+    margin: 0 ;
+}
+
+
+#ctn_bar_cpt2{
+    display: flex;
+    flex-direction: column;
+}
+
+#cpt_titre{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3.75rem;
+    text-transform: capitalize;
+}
+
+#ctn_bar_cpt2 > p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    }
+
+.bar > p:last-child{
+    display: flex;
+    align-items: center;
+    background-color: #FF8229;
+    border-radius: 1.875rem;
+    padding: 0.375rem 0.75rem ;
+}
+
+.bar_pcent{
+    padding-right: 1.25rem;
+}
+
+/* Début insertion des badges compétances2 */
+    .ctn_bck_bar{
+        height: 1.5rem ;
+        width: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 1.6875rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    #logo_angular{
+        background-image: url("image/03Competences/angular.webp");
+    }
+
+    #logo_react{
+        background-image: url("image/03Competences/react.webp");
+    }
+
+    #logo_nodeJS{
+        background-image: url("image/03Competences/NodeJS.webp");
+    }
+
+    #logo_management{
+        background-image: url("image/03Competences/management.webp");
+    }
+
+    #logo_analytics{
+        background-image: url("image/03Competences/analytics.svg");
+    }
+
+    #logo_brainstorming{
+        background-image: url("image/03Competences/Brainstorming2.png");
+    }
+
+    #logo_execution{
+        background-image: url("image/03Competences/Execution.webp");
+    }
+
+/* Fin insertion des badges compétances2 */
+
+#bar_angular{
+    width: 18.75rem ;
+    margin-right: 1.4375rem ;
+    margin-bottom: 1.5rem;
+}
+
+#bar_react{
+    width : 21.875rem ; 
+    margin-bottom: 1.5rem;
+}
+
+#bar_nodeJS{
+    width: 14.125rem;
+    margin-right: 1.5625rem;
+    margin-bottom: 1.5rem;
+}
+
+#bar_management{
+    width: 18.8125rem ;
+    margin-bottom: 1.5rem;
+}
+
+#bar_analytics{
+    width: 17.9375rem;
+    margin-right: 2.1875rem ;
+    margin-bottom: 1.5rem;
+}
+
+#bar_brainstorming{
+    width: 17.9375rem;
+    margin-bottom: 1.5rem;
+}
+
+#bar_execution{
+    width: 30.125rem ;
+}
+
+#ctn_txt_cpt2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ; 
+    max-width: 20.9375rem;
+    max-height: 12.75rem;
+    padding-right: 1.25rem ;
+    padding-left: 10px ;
+}
+
+#ctn_txt_cpt2 > p{
+    width: 20.4375rem;
+    height: 6rem;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#temoignage{
+    border: solid blue 1px ;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 9.3125rem 0rem 11.75rem 0rem ;
+}
+
+
+#temoignage > h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 3.75rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#img_nd_tem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#temoignage_txt{
+    display: flex;
+    flex-direction: column;
+    max-width: 34.9375rem ;
+    padding-left: 2.5rem ;
+}
+
+#temoignage_txt > p:first-child{
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 2.25rem;
+    max-width: 42.3125rem;
+    padding-bottom: 2.375rem;
+}
+
+#temoignage_txt > p:nth-child(2) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    padding-bottom: 0.3125rem;
+    }
+
+#temoignage_txt > p:last-child{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.0313rem;
+}
+
+#actualite{
+    border: solid greenyellow 1px ;
+    padding: 8rem 25.9375rem 11.875rem 24.375rem ;
+    display: flex ;
+    flex-direction: column;
+}
+
+#actualite > .date_actu, .titre_actu, p {
+    margin: 0;
+}
+
+.date_actu{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    color: #FF8229;
+}
+
+.titre_actu{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-transform: capitalize;
+}
+
+#actualite > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+#contact{
+    border: solid rgb(10, 253, 200) 1px ;
+    display: flex;
+    flex-direction: row;
+}
+
+.ctn_illu_ctc{
+    width: 2.625rem;
+    height: 2.625rem;
+}
+
+#ctn_illu_adresse{
+    background-image: url("image/mappointer.png");   
+}
+
+#ctn_illu_mail{
+    background-image: url("image/mail.png");
+    
+}
+
+#ctn_illu_tel{
+    background-image: url("image/tel.png") ;
+}
+
+#conteneur_txt_formulaire{
+    max-width: 33.75rem ;
+}
+
+fieldset{
+    margin: 0;
+    padding: 0;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #00000000;
+  }
+
+input[type=email] {
+    width: 50%;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #00000000;
+  }
+
+  input[type=textarea] {
+    width: 100%;
+    height: 9.6875rem;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #00000000;
+  }
+
+fieldset{
+    border-radius: 5px;
+}
+
+#ctn_name_email{
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    max-width: 33.75rem;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    color: white;
+    background: #BB2323;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    width:12.125rem; 
+    height: 2.9375rem;
+}
+
+/* paramètere de police footer  */
+
+#titre_ctc{
+    margin: 0;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3.75rem;
+    text-transform: capitalize;
+    color: #BFBFBF;
+}
+
+.ctc_org{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    /* identical to box height, or 171% */
+
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: #FF8229;
+}
+
+.info_ctc{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0;
+    max-width: 15.625rem ;
+}
+
+#txt_formulaire > p:first-child {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    /* identical to box height, or 140% */
+
+    letter-spacing: 0.125rem;
+    text-transform: uppercase
+
+}
+
+#txt_formulaire > p:nth-child(2){
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#txt_formulaire >p:last-child {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+legend{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+/* fin paramètere de police footer  */
+
+/* debut padding footer  */
+#conteneur_ctc_addresse{
+    padding-right: 11.1875rem ;
+}
+
+
+/* fin padding footer  */
+
+@media screen and (max-width: 412px){
+    
+    html{
+        width : 100vw ;
+        padding: 0;
+        margin: 0;
+    }
+
+    main{
+        width : 100vw ;
+    }
+    footer{
+        width: 100vw;
+    }
+
+    #photo_olivier, #ctn_ctc_navbar > h2, #ctn_ctc_navbar > .ill_navbar, #img_nd_tem > img, #competence2 {
+        display: none;
+    }
+
+    #text_pres{
+        padding: 0;
+    }
+
+    #portfolio{
+        flex-direction: column;
+    }
+
+}

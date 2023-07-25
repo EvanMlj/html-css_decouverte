@@ -1,0 +1,18 @@
+html, body
+{
+    margin: 0;
+}
+
+.banniere{
+    height: 18.75rem;
+    background-attachment: fixed;
+    background-image: 
+        linear-gradient(225deg, #5596ffc2 0%, #ac2deb57 100%),
+        url("image/Bitmap_sans_filtre.jpg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+  

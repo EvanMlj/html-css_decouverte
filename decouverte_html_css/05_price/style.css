@@ -1,0 +1,291 @@
+:root{
+    font-size: 100%;
+    --primary-color:#E6EFF5;
+    --color-bleu:#2AB3B1;
+    --color-vert-pet:  #C0DF33 ;
+    --color-gris: #9AA7BE;
+    ;
+}
+
+body {
+    margin:0;
+    font-family: 'Karla', sans-serif;
+    background-color: #E6EFF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.conteneur{   
+    width: 635px;
+    
+}
+
+.conteneur > #bloc_blc, #bloc_vert, #bloc_vert_2 {
+    margin: 0;
+    
+}
+
+#bloc_blc {
+    background-color: white;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-radius: 8px;
+}
+
+h1{
+    color: #2AB3B1;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.0187rem;
+    width: 20.25rem;
+    
+}
+
+h3{
+    color: #C0DF33;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    letter-spacing: -0.0141rem;
+    width: min(367px,100%) ;
+    padding-top: 24px;
+    padding-bottom: 11px;
+}
+
+#bloc_blc > p {
+    color: #9AA7BE;
+    font-weight: 400;
+    line-height: 1.625rem;
+    letter-spacing: -0.2px;
+    width: min(555px,100%);
+   
+}
+
+#bloc_blc > h1,h3,p {
+    margin : 0 ;
+    
+}
+
+#bloc_vert {
+    background-color: #2AB3B1;
+    padding-top: 2.5rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 39px;
+    width: max(278px,100%);
+    color: white;
+}
+
+#bloc_vert > h2, #p, #bouton {
+    padding: 0;
+    margin : 0;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+#bloc_vert > h2 {
+    display: flex;
+    width: 182px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.3125rem ;
+    letter-spacing: -0.0141rem;
+    margin-right: 3.4375rem;
+
+}
+
+.abo {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.125rem;
+    padding-right: 5.625rem;
+    width : 9.1875rem ;
+}
+
+#prix {
+    width: 61px;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.3125rem;
+    letter-spacing: -0.4px;
+}
+
+#mois{
+    color: rgb(255, 255, 255, 0.5);
+    width: 75px ;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+
+#dcp {
+    width: 236px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.0125rem;
+    padding-bottom: 1.625rem;
+    }
+
+
+    #bouton{
+    background-color: #C0DF33;
+    height: 48px;
+    width: 237px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+    border-radius: 0.3125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#bloc_vert_2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(42, 179, 177, 0.85) ;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: max(318px,100%);
+    color: white;
+    
+}
+
+#bloc_vert_2 > h2, #paragraphe {
+    padding: 0;
+    margin : 0;
+   
+}
+
+#bloc_vert_2 > h2 {
+    padding-bottom: 1.125rem;
+}
+
+#bloc_vert_2 > #paragraphe {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.0109rem;
+    color: rgb(255, 255, 255, 0.75);
+}
+
+
+#bloc_vert >.saut_ligne,h2{
+    width: min(238px,100%);
+}
+
+.saut_ligne::after{
+    content: "\a";
+    white-space: pre;
+}
+
+
+@media screen and (max-width: 375px) {
+    body {
+        max-height: 100vh ;
+    }
+
+   .conteneur{
+    display: flex;
+    flex-direction: column ;
+    width: 311px;
+    height: 722px;
+    
+   }
+   
+   #bloc_blc, #bloc_vert, #bloc_vert_2{
+    padding: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem ;
+   }
+
+   #bloc_blc{
+    padding-top: 1.75rem ;
+    padding-bottom: 2rem ;
+   }
+
+   #bloc_vert, #bloc_vert_2{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+   }
+
+   .row{
+    display: flex;
+    flex-direction: column;
+   }
+
+   #bloc_blc {
+    box-sizing: border-box ;
+   }
+
+   h1 {
+    width: 16.4375rem;
+    line-height: 1.4375rem;
+    font-size: 1.25rem;
+   } 
+
+   h3 {
+    font-size: 0.9375rem ;
+    line-height: 1.25rem;
+   }
+
+   #bloc_blc{
+    font-size: 0.875rem ;
+    line-height: 1.625rem;
+   }
+
+    #bloc_vert {
+        box-sizing: border-box;
+        
+    }
+
+    #bloc_vert > h2 {
+        font-size: 1.125rem;
+        line-height: 1.3125rem;
+    }
+
+    #prix {
+        font-size: 2rem;
+        line-height: 2.3125rem;
+    }
+
+    #mois{
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+
+   #bloc_vert_2{
+   
+    box-sizing: border-box ; 
+    max-width : 19.4375rem
+   }
+    
+   #bloc_vert_2 > h2 {
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+   }
+
+
+    .saut_ligne {
+        width : 15.25rem ;
+        box-sizing: border-box ;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+}

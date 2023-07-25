@@ -1,0 +1,202 @@
+:root {
+    --color-Aurometal : #6C7289 ;
+    --color-Aquamarine: #3D8168 ;
+    --color-Gunmetal: #1C232B ;
+    --color-Cream: #F2EAE2 ;
+    --color-Vert_hover: #1A4032 ;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-Cream);
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.conteneur{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    width: min(600px,100%);
+}
+
+
+#parfum{
+    background-image: url("image/parfum.svg");
+    width: max(343px,100%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.dcp{
+    display: flex;
+    flex-direction: column;
+}
+
+.prix{
+    display: flex;
+    flex-direction: row;
+}
+
+#perfume, p, .anc_prix {
+    margin: 0;
+    font-family: 'Montserrat';
+    color: var(--color-Aurometal);
+    font-weight: 500;
+}
+
+    #perfume{ 
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        letter-spacing: 0.3125rem
+    }
+
+    p{
+        font-size: 0.875rem;
+        line-height: 1.4375rem;
+        width: 14.8125rem;
+    }
+
+    .anc_prix{
+        font-style: normal;
+        font-size: 0.8125rem;
+        line-height: 23px;
+        text-decoration: line-through;
+    }
+
+h1, .nv_prix {
+    font-family: 'Fraunces';
+    margin: 0 ;
+}
+
+    h1{
+        color: var(--color-Gunmetal);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .nv_prix{
+        color: var(--color-Aquamarine);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    #bouton{
+        font-family: 'Montserrat' ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #3D8168 ;
+        
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        width: 236px ;
+    }
+
+
+    /* padding desktop */
+
+.dcp {
+    padding-top: 32px;
+    padding-right: 32px ; 
+    padding-bottom: 32px;
+    padding-left: 32px;
+}
+
+#perfume{
+    padding-bottom: 20px ;
+}
+
+h1{
+    padding-bottom: 24px;
+}
+
+p{
+    padding-bottom :29px ;
+}
+
+.prix{
+    display: flex;
+    align-items: center ;
+    padding-bottom: 30px ;
+}
+
+.nv_prix {
+    padding-right: 19px ;
+}
+
+#bouton{
+height: 48px ;
+}
+
+#bouton:hover{
+    background-color: #1A4032 ;
+    cursor: pointer;
+}
+
+#cart{
+    padding-right: 12px;
+}
+
+@media screen and (max-width: 375px){
+    body {
+        max-height: 100vh ;
+    }
+
+    .conteneur{
+        display: flex;
+        flex-direction: column;
+        width: 343px ;
+        border-radius: 10px;
+    }
+
+    #parfum{
+        height: 240px;
+        background-image: url("image/parfum_mobile.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        
+    }
+
+    .dcp{
+        padding-top: 24px;
+        padding-right: 24px;
+        padding-bottom: 24px;
+        padding-left: 24px;
+    }
+ 
+    #perfume{
+        padding-bottom: 12px ;
+    }
+    
+    h1{
+        padding-bottom: 16px;
+    }
+    
+    p{
+        width: 100%;
+        padding-bottom :24px ;
+    }
+
+    .prix{
+        padding-bottom: 20px ;
+    }
+
+    #bouton{
+        width: 295px;
+    }
+
+}

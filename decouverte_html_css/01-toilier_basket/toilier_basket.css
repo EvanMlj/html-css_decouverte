@@ -1,0 +1,96 @@
+.boite{
+
+width: 550px;
+height: 450px;
+margin-top:10% ;
+margin-left: 33%;
+margin-right: 30% ;
+border: 1px ridge rgb(0, 0, 0);
+background: #FFFFFF;
+}
+
+
+h1{
+width : 169x;
+height: 15px;
+margin-top: 23px;
+margin-left: 18px;    
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+letter-spacing: 2px;
+text-transform: uppercase;
+
+color: #F24A02;
+}
+
+
+h2{
+    margin : 18px;
+    width: 477px;
+    height: 107px;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 48px;
+    /* or 109% */
+    
+    
+    color: #20242D;
+
+}
+
+#texte{
+margin : 18 px ;
+width: 476px;
+height: 106px;
+margin-left: 18px;
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* or 138% */
+
+
+color: #69707D;
+}
+
+#nv_prix{
+margin : 18px;
+width: 100px;
+height: 35px;
+margin-left: 18px;
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #20242D;
+}
+
+#ancien_prix{
+margin : 18px;
+width: 52px;
+height: 17px;
+margin-left: 18px;
+margin-top: -2em;
+top: 300px;
+
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+text-decoration-line: line-through;
+
+color: #69707D;
+}

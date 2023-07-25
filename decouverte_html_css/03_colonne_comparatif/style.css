@@ -1,0 +1,157 @@
+:root{
+    --primary-color: #f2f2f2
+    /* sytax variable */
+}
+
+body,html {
+    margin: 0;
+}
+
+#sedans{  /* conteneur */
+    display : flex ; 
+    justify-content: center;   /*axe x*/
+    align-items: center; /* axe y */
+    flex-direction: row ; /*  vh = hautaur du viewport  */
+    margin :auto ;
+    width: 57.5rem;
+    height: 31.25rem;
+    border-radius: 0.5rem ; 
+}
+
+#contenant_org{ /*item 1*/
+    height: 31.25rem ;
+    width:19.1875rem ;
+    margin:auto ;
+    background-color: #E28625;
+    border-radius: 0.5rem ;
+}
+
+
+    
+#suv{  /*item 2*/
+    height: 31.25rem ;
+    width:19.1875rem ;
+    margin:auto ;
+    background-color: #006971;
+    border-radius: 0.5rem ;
+}
+
+#lux{ /*item 3*/
+
+    height: 31.25rem ;
+    width:19.1875rem ;
+    margin:auto ;
+    background-color: #004140;
+    border-radius: 0.5rem ;
+}
+
+.cadre {
+    height : 25.25rem ;
+    width : 13.25rem ;
+    padding-top: 3rem ;
+    padding-right: 47,0.3125rem;
+    padding-bottom: 3rem;
+    padding-left: 2.9688rem;
+
+}
+
+h1 {
+    font-family:'Big Shoulders Display' ;
+    font-style: normal;
+    font-size: 2.5rem;
+    font-weight: 43.75rem;
+    line-height: 47,5.5rem;
+    color: white;
+    
+}
+
+.txt {
+    color: rgba(255, 255, 255, 0.75) ;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    
+}
+
+
+#button1{
+
+    height : 3rem;
+    line-height: 3rem;
+    width : 9.125rem;
+    margin-top : 80px ;
+    margin-right : 4.0625rem ; 
+    color: #E28625;
+    background-color: white;
+    border-radius: 1.5625rem ;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    text-align: center ;
+    cursor : url("image/Pointer Copy 13.png"),auto;
+}
+
+#button2{
+
+    height : 3rem;
+    line-height: 3rem;
+    width : 9.125rem;
+    margin-top : 80px ;
+    margin-right : 4.0625rem ; 
+    color :#006971 ;
+    background-color: white;
+    border-radius: 1.5625rem ;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    text-align: center ;
+    cursor : url("image/Pointer Copy 13.png"),auto;
+}
+
+#button3{
+
+    height : 3rem;
+    line-height: 3rem;
+    width : 9.125rem;
+    margin-top : 80px ;
+    margin-right : 4.0625rem ; 
+    color: #004140;
+    background-color: white;
+    border-radius: 25px ;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    text-align: center ;
+    cursor : url("image/Pointer Copy 13.png"), auto;
+}
+
+#button1:hover {
+    color: white;
+    background-color: transparent;
+    border: 0.0625rem solid #F2F2F2;
+}
+
+#button2:hover {
+    color: white;
+    background-color: transparent;
+    border: 0.0625rem solid #F2F2F2;
+}
+
+#button3:hover {
+    color: white;
+    background-color: transparent;
+    border: 0.0625rem solid #F2F2F2;
+}
+
+@media screen and (max-width: 23.4375rem) 
+{
+    #sedans{ flex-direction: column;
+        align-items: center;
+        height : auto;
+        width: auto;
+         }
+    
+   #suv,#lux,#contenant_org{
+        width : 100% ; 
+        }
+
+    }
